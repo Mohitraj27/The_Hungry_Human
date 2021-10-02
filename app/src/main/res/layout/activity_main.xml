@@ -17,6 +17,15 @@
             android:text="The_Hungry_Human"
 
             android:textSize="24sp" />
+        <TextView
+            android:padding="12dp"
+            android:id="@+id/text_view_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="devil.white.2712@gmail.com"
+            android:layout_below="@+id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_starters"
