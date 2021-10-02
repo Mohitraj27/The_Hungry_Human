@@ -13,12 +13,17 @@ public class MainActivity extends AppCompatActivity
 {
 CardView startersCard;
 CardView mainsCard;
+CardView DesertCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_mains);
+        DesertCard = findViewById(R.id.card_view_deserts);
+
+
+
         startersCard.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -42,6 +47,18 @@ CardView mainsCard;
 
 
     });
+
+
+        DesertCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent DesertActivityIntent =new Intent(MainActivity.this,DesertActivity.class);
+                startActivity(DesertActivityIntent);
+
+            }
+        });
+
+
         TextView emailTextView = findViewById(R.id.text_view_email_address);
         emailTextView.setOnClickListener(new View.OnClickListener(){
             @Override
