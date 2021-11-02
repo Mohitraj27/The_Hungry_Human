@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffdbac"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-
+    android:background="#ffdbac"
    android:id="@+id/list_view_main_courses"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 </ListView>
+</LinearLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffdbac">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-light"
-            android:text="The_Hungry_Human"
+            android:text="An Indian restaurant app for ordering food online of your choice from the menu provided in the list. Contact Details of the restaurant owner is also provided regarding any queries."
 
             android:textSize="24sp" />
 
@@ -39,14 +40,17 @@
             android:layout_marginStart="65dp"
             android:layout_marginTop="122dp"
             android:layout_marginEnd="87dp"
+
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#e0ac69">
 
                 <ImageView
+
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:scaleType="centerCrop"
@@ -74,12 +78,13 @@
             android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="142dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="87dp"
 
             android:layout_marginBottom="150dp">
 
             <LinearLayout
+                android:background="#e0ac69"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -99,8 +104,11 @@
 
                     android:text="Main Courses"
                     android:textSize="20sp" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_deserts"
@@ -111,12 +119,13 @@
             android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="87dp"
 
             android:layout_marginBottom="150dp">
 
             <LinearLayout
+                android:background="#e0ac69"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -126,7 +135,8 @@
                     android:layout_height="150dp"
                     android:orientation="vertical"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/deserts" />
+                    android:src="@drawable/deserts"
+                />
 
                 <TextView
 
@@ -140,6 +150,23 @@
         </androidx.cardview.widget.CardView>
 
 
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="1555dp"
+
+            android:text="Contact Us" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="1555dp"
+           android:textSize="11sp"
+            android:text="Place Your Order" />
 
     </RelativeLayout>
 
